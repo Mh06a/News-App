@@ -1,0 +1,5 @@
+import 'package:dio/dio.dart';
+
+class LoggerInterceptor extends LogInterceptor {
+  LoggerInterceptor() : super(requestBody: true, responseBody: true);
+}

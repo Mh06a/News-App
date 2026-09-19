@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:news_app/features/bookmark/view/bookmark_screen.dart';
-import 'package:news_app/features/home/view/home_screen.dart';
-import 'package:news_app/features/profile/view/profile_screen.dart';
-import 'package:news_app/features/search/view/search_screen.dart';
+
+
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -16,10 +14,6 @@ class _MainScreenState extends State<MainScreen> {
   //step1 -->>  Class variables :
   int _currentIndex = 0;
   final List<Widget> _screens = [
-    HomeScreen(),
-    SearchScreen(),
-    BookmarkScreen(),
-    ProfileScreen(),
   ];
 
   //step2 -->> call a build function :

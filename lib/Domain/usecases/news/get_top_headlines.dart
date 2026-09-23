@@ -13,16 +13,12 @@ class GetTopHeadlines {
 
   //step3 --> create function to use in presentation layer :
   Future<Result<List<Article>>> call({
-    String? category,
-    String? language,
-    String? country,
-    int page = 1,
+    required String country,
+    required String language,
   }) {
     return repository.getTopHeadlines(
-      category: category,
       language: language,
       country: country,
-      page: page,
     );
   }
 }

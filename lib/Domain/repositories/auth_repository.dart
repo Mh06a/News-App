@@ -22,10 +22,20 @@ abstract class AuthRepository {
   Future<Result<User>> signInWithGoogle();
 
 
-  //step4 -->> create function to sign out :
+  //step4 -->> create function to sign in with apple :
+  Future<Result<User>> signInWithApple();
+
+
+  //step5 -->> create function to sign out :
   Future<void> signOut();
 
 
-  //step5 -->> create function to get current user :
+  //step6 -->> create function to get current user :
   Future<Result<User?>> getCurrentUser();
+
+
+  //step7 -->> create function to reset password :
+  Future<Result<void>> resetPassword({
+    required String email,
+  });
 }

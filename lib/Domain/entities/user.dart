@@ -5,8 +5,8 @@ class User extends Equatable  {
   final String id;
   final String name;
   final String email;
-  final String? country;
-  final String? language;
+  final String? location;
+  final String? avatarPath;
 
 
   //step2 -->> Constructor :
@@ -14,12 +14,18 @@ class User extends Equatable  {
     required this.id,
     required this.name,
     required this.email,
-    this.country,
-    this.language,
+    this.location,
+    this.avatarPath,
   });
 
 
   //step3 -->> use Equatable :
   @override
-  List<Object?> get props => [id , name , email , country , language];
+  List<Object?> get props => [
+    id,
+    name,
+    email,
+    location,
+    avatarPath,
+  ];
 }

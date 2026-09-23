@@ -14,8 +14,8 @@ class SearchNews {
   //step3 --> create function to use in presentation layer :
   Future<Result<List<Article>>> call({
     required String query,
-    String? language,
-    String? country,
+    required String country,
+    required String language,
     int page = 1,
   }) {
     return repository.searchNews(

@@ -12,4 +12,14 @@ abstract class UserRepository {
     String? country,
     String? language,
   });
+
+
+  //step3 -->> create function to update user avatar :
+  Future<Result<User>> updateAvatar({
+    required String filePath,
+  });
+
+
+  //step4 -->> create function to delete account :
+  Future<Result<void>> deleteAccount();
 }

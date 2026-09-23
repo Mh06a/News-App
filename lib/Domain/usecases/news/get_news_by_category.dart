@@ -14,15 +14,14 @@ class GetNewsByCategory {
   //step3 --> create function to use in presentation layer :
   Future<Result<List<Article>>> call({
     required String category,
-    String? language,
-    String? country,
+    required String language,
+    required String country,
     int page = 1,
   }) {
     return repository.getNewsByCategory(
       category: category,
       language: language,
       country: country,
-      page: page,
     );
   }
 }

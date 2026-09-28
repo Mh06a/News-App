@@ -1,6 +1,5 @@
-
-
 import 'package:news_app/Domain/repositories/auth_repository.dart';
+import 'package:news_app/core/result/result.dart';
 
 class SignOut {
   //step1 -->> class's variables :
@@ -12,7 +11,7 @@ class SignOut {
 
 
   //step3 --> create function to use in presentation layer :
-  Future<void> call() {
+  Future<Result<void>> call() {
     return repository.signOut();
   }
 }

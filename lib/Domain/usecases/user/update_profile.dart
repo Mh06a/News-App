@@ -14,13 +14,11 @@ class UpdateProfile {
   //step3 --> create function to use in presentation layer :
   Future<Result<User>> call({
     required String name,
-    String? country,
-    String? language,
+    String? location,
   }) {
     return repository.updateProfile(
       name: name,
-      country: country,
-      language: language,
+      location: location
     );
   }
 }

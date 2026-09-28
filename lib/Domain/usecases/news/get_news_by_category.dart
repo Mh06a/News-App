@@ -22,6 +22,7 @@ class GetNewsByCategory {
       category: category,
       language: language,
       country: country,
+      page: page
     );
   }
 }

@@ -1,4 +1,5 @@
 import 'package:news_app/Domain/repositories/bookmark_repository.dart';
+import 'package:news_app/core/result/result.dart';
 
 class RemoveBookmark {
   //step1 -->> class's variables :
@@ -10,7 +11,7 @@ class RemoveBookmark {
 
 
   //step3 --> create function to use in presentation layer :
-  Future<void> call(String articleId) {
+  Future<Result<void>> call(String articleId) {
     return repository.removeBookmark(articleId);
   }
 }

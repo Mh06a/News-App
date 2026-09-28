@@ -14,6 +14,7 @@ abstract class NewsRepository {
     required String category,
     required String country,
     required String language,
+    int page = 1,
   });
 
 

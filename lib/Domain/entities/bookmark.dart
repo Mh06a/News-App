@@ -3,7 +3,7 @@ import 'article.dart';
 
 class Bookmark  extends Equatable {
   //step1 -->> class's variables :
-  final String id;
+  final String? id;
   final String userId;
   final Article article;
   final DateTime createdAt;
@@ -11,7 +11,7 @@ class Bookmark  extends Equatable {
 
   //step2 -->> Constructor :
   const Bookmark({
-    required this.id,
+     this.id,
     required this.userId,
     required this.article,
     required this.createdAt,

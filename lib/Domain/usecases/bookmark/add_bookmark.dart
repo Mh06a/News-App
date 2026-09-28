@@ -1,5 +1,6 @@
 import 'package:news_app/Domain/entities/article.dart';
 import 'package:news_app/Domain/repositories/bookmark_repository.dart';
+import 'package:news_app/core/result/result.dart';
 
 class AddBookmark {
   //step1 -->> class's variables :
@@ -11,7 +12,7 @@ class AddBookmark {
 
 
   //step3 --> create function to use in presentation layer :
-  Future<void> call(Article article) {
+  Future<Result<void>> call(Article article) {
     return repository.addBookmark(article);
   }
 }

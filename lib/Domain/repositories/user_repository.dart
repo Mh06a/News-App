@@ -9,8 +9,7 @@ abstract class UserRepository {
   //step2 -->> create function to update profile :
   Future<Result<User>> updateProfile({
     required String name,
-    String? country,
-    String? language,
+    String? location,
   });
 
 
@@ -22,4 +21,10 @@ abstract class UserRepository {
 
   //step4 -->> create function to delete account :
   Future<Result<void>> deleteAccount();
+
+
+  //step5 -->> create function to get avatar path :
+  Future<Result<String>> getAvatarUrl({
+    required String avatarPath,
+  });
 }

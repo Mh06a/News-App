@@ -27,7 +27,7 @@ abstract class AuthRepository {
 
 
   //step5 -->> create function to sign out :
-  Future<void> signOut();
+  Future<Result<void>> signOut();
 
 
   //step6 -->> create function to get current user :
